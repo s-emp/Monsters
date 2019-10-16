@@ -15,37 +15,22 @@
 		9956EB7E2354C19100A48EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9956EB7C2354C19100A48EBD /* LaunchScreen.storyboard */; };
 		9956EB892354C19100A48EBD /* MonstersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956EB882354C19100A48EBD /* MonstersTests.swift */; };
 		99F13B612357181600883937 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B572357181500883937 /* Monster.swift */; };
-		99F13B622357181600883937 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B572357181500883937 /* Monster.swift */; };
 		99F13B632357181600883937 /* Monster+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B582357181500883937 /* Monster+Type.swift */; };
-		99F13B642357181600883937 /* Monster+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B582357181500883937 /* Monster+Type.swift */; };
 		99F13B652357181600883937 /* Biom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B592357181500883937 /* Biom.swift */; };
-		99F13B662357181600883937 /* Biom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B592357181500883937 /* Biom.swift */; };
 		99F13B672357181600883937 /* MonsterJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5A2357181500883937 /* MonsterJSON.swift */; };
-		99F13B682357181600883937 /* MonsterJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5A2357181500883937 /* MonsterJSON.swift */; };
 		99F13B6B2357181600883937 /* Monster+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5C2357181500883937 /* Monster+Location.swift */; };
-		99F13B6C2357181600883937 /* Monster+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5C2357181500883937 /* Monster+Location.swift */; };
 		99F13B6D2357181600883937 /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5D2357181500883937 /* Alignment.swift */; };
-		99F13B6E2357181600883937 /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5D2357181500883937 /* Alignment.swift */; };
 		99F13B6F2357181600883937 /* Hp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5E2357181500883937 /* Hp.swift */; };
-		99F13B702357181600883937 /* Hp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5E2357181500883937 /* Hp.swift */; };
 		99F13B712357181600883937 /* Monster+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5F2357181500883937 /* Monster+Action.swift */; };
-		99F13B722357181600883937 /* Monster+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5F2357181500883937 /* Monster+Action.swift */; };
 		99F13B732357181600883937 /* Monster+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B602357181600883937 /* Monster+Size.swift */; };
-		99F13B742357181600883937 /* Monster+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B602357181600883937 /* Monster+Size.swift */; };
 		99F13B78235718A400883937 /* NSRegularExpression+matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B77235718A400883937 /* NSRegularExpression+matches.swift */; };
-		99F13B79235718A400883937 /* NSRegularExpression+matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B77235718A400883937 /* NSRegularExpression+matches.swift */; };
 		99F13B7C2357192F00883937 /* Monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F13B7B2357192F00883937 /* Monsters.json */; };
 		99F13B7D2357192F00883937 /* Monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F13B7B2357192F00883937 /* Monsters.json */; };
 		99F13B802357195D00883937 /* MonsterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B7F2357195D00883937 /* MonsterService.swift */; };
-		99F13B812357195D00883937 /* MonsterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B7F2357195D00883937 /* MonsterService.swift */; };
 		99F13B832357196900883937 /* MonsterServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B822357196900883937 /* MonsterServiceImpl.swift */; };
-		99F13B842357196900883937 /* MonsterServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B822357196900883937 /* MonsterServiceImpl.swift */; };
 		99F13B882357355800883937 /* Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B862357355800883937 /* Exported.swift */; };
-		99F13B892357355800883937 /* Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B862357355800883937 /* Exported.swift */; };
 		99F13B8A2357355800883937 /* Imported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B872357355800883937 /* Imported.swift */; };
-		99F13B8B2357355800883937 /* Imported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B872357355800883937 /* Imported.swift */; };
 		99F13B90235756E600883937 /* MonsterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B8F235756E600883937 /* MonsterData.swift */; };
-		99F13B9223575DA500883937 /* MonsterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B8F235756E600883937 /* MonsterData.swift */; };
 		C267AA72C4164DE63124C0E3 /* Pods_MonstersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63600F11B42EBD28118B866 /* Pods_MonstersTests.framework */; };
 		D7B4463D7CF97A984FD95863 /* Pods_Monsters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DF4C30F83B37946A9E7D1D /* Pods_Monsters.framework */; };
 /* End PBXBuildFile section */
@@ -456,22 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F13B6C2357181600883937 /* Monster+Location.swift in Sources */,
-				99F13B6E2357181600883937 /* Alignment.swift in Sources */,
-				99F13B742357181600883937 /* Monster+Size.swift in Sources */,
-				99F13B812357195D00883937 /* MonsterService.swift in Sources */,
-				99F13B702357181600883937 /* Hp.swift in Sources */,
-				99F13B8B2357355800883937 /* Imported.swift in Sources */,
-				99F13B662357181600883937 /* Biom.swift in Sources */,
-				99F13B892357355800883937 /* Exported.swift in Sources */,
-				99F13B642357181600883937 /* Monster+Type.swift in Sources */,
-				99F13B682357181600883937 /* MonsterJSON.swift in Sources */,
-				99F13B622357181600883937 /* Monster.swift in Sources */,
 				9956EB892354C19100A48EBD /* MonstersTests.swift in Sources */,
-				99F13B79235718A400883937 /* NSRegularExpression+matches.swift in Sources */,
-				99F13B722357181600883937 /* Monster+Action.swift in Sources */,
-				99F13B9223575DA500883937 /* MonsterData.swift in Sources */,
-				99F13B842357196900883937 /* MonsterServiceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
