@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9956EB722354C18F00A48EBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956EB712354C18F00A48EBD /* AppDelegate.swift */; };
+		9956EB742354C18F00A48EBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956EB732354C18F00A48EBD /* SceneDelegate.swift */; };
+		9956EB762354C18F00A48EBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956EB752354C18F00A48EBD /* ViewController.swift */; };
+		9956EB792354C18F00A48EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9956EB772354C18F00A48EBD /* Main.storyboard */; };
+		9956EB7B2354C19100A48EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9956EB7A2354C19100A48EBD /* Assets.xcassets */; };
+		9956EB7E2354C19100A48EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9956EB7C2354C19100A48EBD /* LaunchScreen.storyboard */; };
+		9956EB892354C19100A48EBD /* MonstersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956EB882354C19100A48EBD /* MonstersTests.swift */; };
+		99F13B612357181600883937 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B572357181500883937 /* Monster.swift */; };
+		99F13B622357181600883937 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B572357181500883937 /* Monster.swift */; };
+		99F13B632357181600883937 /* Monster+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B582357181500883937 /* Monster+Type.swift */; };
+		99F13B642357181600883937 /* Monster+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B582357181500883937 /* Monster+Type.swift */; };
+		99F13B652357181600883937 /* Biom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B592357181500883937 /* Biom.swift */; };
+		99F13B662357181600883937 /* Biom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B592357181500883937 /* Biom.swift */; };
+		99F13B672357181600883937 /* MonsterJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5A2357181500883937 /* MonsterJSON.swift */; };
+		99F13B682357181600883937 /* MonsterJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5A2357181500883937 /* MonsterJSON.swift */; };
+		99F13B6B2357181600883937 /* Monster+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5C2357181500883937 /* Monster+Location.swift */; };
+		99F13B6C2357181600883937 /* Monster+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5C2357181500883937 /* Monster+Location.swift */; };
+		99F13B6D2357181600883937 /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5D2357181500883937 /* Alignment.swift */; };
+		99F13B6E2357181600883937 /* Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5D2357181500883937 /* Alignment.swift */; };
+		99F13B6F2357181600883937 /* Hp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5E2357181500883937 /* Hp.swift */; };
+		99F13B702357181600883937 /* Hp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5E2357181500883937 /* Hp.swift */; };
+		99F13B712357181600883937 /* Monster+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5F2357181500883937 /* Monster+Action.swift */; };
+		99F13B722357181600883937 /* Monster+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B5F2357181500883937 /* Monster+Action.swift */; };
+		99F13B732357181600883937 /* Monster+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B602357181600883937 /* Monster+Size.swift */; };
+		99F13B742357181600883937 /* Monster+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B602357181600883937 /* Monster+Size.swift */; };
+		99F13B78235718A400883937 /* NSRegularExpression+matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B77235718A400883937 /* NSRegularExpression+matches.swift */; };
+		99F13B79235718A400883937 /* NSRegularExpression+matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B77235718A400883937 /* NSRegularExpression+matches.swift */; };
+		99F13B7C2357192F00883937 /* Monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F13B7B2357192F00883937 /* Monsters.json */; };
+		99F13B7D2357192F00883937 /* Monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 99F13B7B2357192F00883937 /* Monsters.json */; };
+		99F13B802357195D00883937 /* MonsterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B7F2357195D00883937 /* MonsterService.swift */; };
+		99F13B812357195D00883937 /* MonsterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B7F2357195D00883937 /* MonsterService.swift */; };
+		99F13B832357196900883937 /* MonsterServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B822357196900883937 /* MonsterServiceImpl.swift */; };
+		99F13B842357196900883937 /* MonsterServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B822357196900883937 /* MonsterServiceImpl.swift */; };
+		99F13B882357355800883937 /* Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B862357355800883937 /* Exported.swift */; };
+		99F13B892357355800883937 /* Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B862357355800883937 /* Exported.swift */; };
+		99F13B8A2357355800883937 /* Imported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B872357355800883937 /* Imported.swift */; };
+		99F13B8B2357355800883937 /* Imported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B872357355800883937 /* Imported.swift */; };
+		99F13B90235756E600883937 /* MonsterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B8F235756E600883937 /* MonsterData.swift */; };
+		99F13B9223575DA500883937 /* MonsterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B8F235756E600883937 /* MonsterData.swift */; };
+		C267AA72C4164DE63124C0E3 /* Pods_MonstersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63600F11B42EBD28118B866 /* Pods_MonstersTests.framework */; };
+		D7B4463D7CF97A984FD95863 /* Pods_Monsters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DF4C30F83B37946A9E7D1D /* Pods_Monsters.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9956EB852354C19100A48EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9956EB662354C18F00A48EBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9956EB6D2354C18F00A48EBD;
+			remoteInfo = Monsters;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045623EDB4F72A6A8F4C4667 /* Pods-MonstersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.release.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.release.xcconfig"; sourceTree = "<group>"; };
+		47380D12DE9197583D99DD71 /* Pods-MonstersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.debug.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9956EB6E2354C18F00A48EBD /* Monsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9956EB712354C18F00A48EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9956EB732354C18F00A48EBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9956EB752354C18F00A48EBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9956EB782354C18F00A48EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9956EB7A2354C19100A48EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9956EB7D2354C19100A48EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9956EB7F2354C19100A48EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9956EB842354C19100A48EBD /* MonstersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonstersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9956EB882354C19100A48EBD /* MonstersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstersTests.swift; sourceTree = "<group>"; };
+		9956EB8A2354C19100A48EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F13B572357181500883937 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		99F13B582357181500883937 /* Monster+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Monster+Type.swift"; sourceTree = "<group>"; };
+		99F13B592357181500883937 /* Biom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biom.swift; sourceTree = "<group>"; };
+		99F13B5A2357181500883937 /* MonsterJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterJSON.swift; sourceTree = "<group>"; };
+		99F13B5C2357181500883937 /* Monster+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Monster+Location.swift"; sourceTree = "<group>"; };
+		99F13B5D2357181500883937 /* Alignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alignment.swift; sourceTree = "<group>"; };
+		99F13B5E2357181500883937 /* Hp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hp.swift; sourceTree = "<group>"; };
+		99F13B5F2357181500883937 /* Monster+Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Monster+Action.swift"; sourceTree = "<group>"; };
+		99F13B602357181600883937 /* Monster+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Monster+Size.swift"; sourceTree = "<group>"; };
+		99F13B77235718A400883937 /* NSRegularExpression+matches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+matches.swift"; sourceTree = "<group>"; };
+		99F13B7B2357192F00883937 /* Monsters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Monsters.json; sourceTree = "<group>"; };
+		99F13B7F2357195D00883937 /* MonsterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterService.swift; sourceTree = "<group>"; };
+		99F13B822357196900883937 /* MonsterServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterServiceImpl.swift; sourceTree = "<group>"; };
+		99F13B862357355800883937 /* Exported.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exported.swift; sourceTree = "<group>"; };
+		99F13B872357355800883937 /* Imported.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Imported.swift; sourceTree = "<group>"; };
+		99F13B8F235756E600883937 /* MonsterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterData.swift; sourceTree = "<group>"; };
+		A63600F11B42EBD28118B866 /* Pods_MonstersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonstersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2DF4C30F83B37946A9E7D1D /* Pods_Monsters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monsters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA82ABF19D23384F4DDAE3D0 /* Pods-Monsters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters.release.xcconfig"; path = "Target Support Files/Pods-Monsters/Pods-Monsters.release.xcconfig"; sourceTree = "<group>"; };
+		EEDCE5DF55105D2558CD7866 /* Pods-Monsters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters.debug.xcconfig"; path = "Target Support Files/Pods-Monsters/Pods-Monsters.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9956EB6B2354C18F00A48EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B4463D7CF97A984FD95863 /* Pods_Monsters.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9956EB812354C19100A48EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C267AA72C4164DE63124C0E3 /* Pods_MonstersTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		682E523D61B8FA03541EE593 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEDCE5DF55105D2558CD7866 /* Pods-Monsters.debug.xcconfig */,
+				EA82ABF19D23384F4DDAE3D0 /* Pods-Monsters.release.xcconfig */,
+				47380D12DE9197583D99DD71 /* Pods-MonstersTests.debug.xcconfig */,
+				045623EDB4F72A6A8F4C4667 /* Pods-MonstersTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9956EB652354C18F00A48EBD = {
+			isa = PBXGroup;
+			children = (
+				9956EB702354C18F00A48EBD /* Monsters */,
+				9956EB872354C19100A48EBD /* MonstersTests */,
+				9956EB6F2354C18F00A48EBD /* Products */,
+				682E523D61B8FA03541EE593 /* Pods */,
+				BF11EE90F6CF49AD0816035F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9956EB6F2354C18F00A48EBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9956EB6E2354C18F00A48EBD /* Monsters.app */,
+				9956EB842354C19100A48EBD /* MonstersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9956EB702354C18F00A48EBD /* Monsters */ = {
+			isa = PBXGroup;
+			children = (
+				99F13B7A2357191B00883937 /* Resources */,
+				99F13B752357189600883937 /* Core */,
+				99F13B7E2357194400883937 /* Services */,
+				99F13B562357180200883937 /* Models */,
+				9956EB712354C18F00A48EBD /* AppDelegate.swift */,
+				9956EB732354C18F00A48EBD /* SceneDelegate.swift */,
+				9956EB752354C18F00A48EBD /* ViewController.swift */,
+				9956EB772354C18F00A48EBD /* Main.storyboard */,
+				9956EB7C2354C19100A48EBD /* LaunchScreen.storyboard */,
+				9956EB7F2354C19100A48EBD /* Info.plist */,
+			);
+			path = Monsters;
+			sourceTree = "<group>";
+		};
+		9956EB872354C19100A48EBD /* MonstersTests */ = {
+			isa = PBXGroup;
+			children = (
+				9956EB882354C19100A48EBD /* MonstersTests.swift */,
+				9956EB8A2354C19100A48EBD /* Info.plist */,
+			);
+			path = MonstersTests;
+			sourceTree = "<group>";
+		};
+		99F13B562357180200883937 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99F13B5D2357181500883937 /* Alignment.swift */,
+				99F13B592357181500883937 /* Biom.swift */,
+				99F13B5E2357181500883937 /* Hp.swift */,
+				99F13B572357181500883937 /* Monster.swift */,
+				99F13B5A2357181500883937 /* MonsterJSON.swift */,
+				99F13B5F2357181500883937 /* Monster+Action.swift */,
+				99F13B5C2357181500883937 /* Monster+Location.swift */,
+				99F13B602357181600883937 /* Monster+Size.swift */,
+				99F13B582357181500883937 /* Monster+Type.swift */,
+				99F13B8F235756E600883937 /* MonsterData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99F13B752357189600883937 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				99F13B852357354700883937 /* FileSystem */,
+				99F13B762357189A00883937 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		99F13B762357189A00883937 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				99F13B77235718A400883937 /* NSRegularExpression+matches.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		99F13B7A2357191B00883937 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99F13B7B2357192F00883937 /* Monsters.json */,
+				9956EB7A2354C19100A48EBD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		99F13B7E2357194400883937 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				99F13B822357196900883937 /* MonsterServiceImpl.swift */,
+				99F13B7F2357195D00883937 /* MonsterService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		99F13B852357354700883937 /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+				99F13B862357355800883937 /* Exported.swift */,
+				99F13B872357355800883937 /* Imported.swift */,
+			);
+			path = FileSystem;
+			sourceTree = "<group>";
+		};
+		BF11EE90F6CF49AD0816035F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2DF4C30F83B37946A9E7D1D /* Pods_Monsters.framework */,
+				A63600F11B42EBD28118B866 /* Pods_MonstersTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9956EB6D2354C18F00A48EBD /* Monsters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9956EB8D2354C19100A48EBD /* Build configuration list for PBXNativeTarget "Monsters" */;
+			buildPhases = (
+				67A35C4D1517EDA05EC5FC83 /* [CP] Check Pods Manifest.lock */,
+				9956EB6A2354C18F00A48EBD /* Sources */,
+				9956EB6B2354C18F00A48EBD /* Frameworks */,
+				9956EB6C2354C18F00A48EBD /* Resources */,
+				59D343B2B06BE66C0D581477 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Monsters;
+			productName = Monsters;
+			productReference = 9956EB6E2354C18F00A48EBD /* Monsters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9956EB832354C19100A48EBD /* MonstersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9956EB902354C19100A48EBD /* Build configuration list for PBXNativeTarget "MonstersTests" */;
+			buildPhases = (
+				DDD8E5E102D3FD2DC70E5F0C /* [CP] Check Pods Manifest.lock */,
+				9956EB802354C19100A48EBD /* Sources */,
+				9956EB812354C19100A48EBD /* Frameworks */,
+				9956EB822354C19100A48EBD /* Resources */,
+				36F8CC7115C341F18B15FC21 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9956EB862354C19100A48EBD /* PBXTargetDependency */,
+			);
+			name = MonstersTests;
+			productName = MonstersTests;
+			productReference = 9956EB842354C19100A48EBD /* MonstersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9956EB662354C18F00A48EBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Sergey Melnikov";
+				TargetAttributes = {
+					9956EB6D2354C18F00A48EBD = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					9956EB832354C19100A48EBD = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 9956EB6D2354C18F00A48EBD;
+					};
+				};
+			};
+			buildConfigurationList = 9956EB692354C18F00A48EBD /* Build configuration list for PBXProject "Monsters" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9956EB652354C18F00A48EBD;
+			productRefGroup = 9956EB6F2354C18F00A48EBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9956EB6D2354C18F00A48EBD /* Monsters */,
+				9956EB832354C19100A48EBD /* MonstersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9956EB6C2354C18F00A48EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F13B7C2357192F00883937 /* Monsters.json in Resources */,
+				9956EB7E2354C19100A48EBD /* LaunchScreen.storyboard in Resources */,
+				9956EB7B2354C19100A48EBD /* Assets.xcassets in Resources */,
+				9956EB792354C18F00A48EBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9956EB822354C19100A48EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F13B7D2357192F00883937 /* Monsters.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36F8CC7115C341F18B15FC21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonstersTests/Pods-MonstersTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MonstersTests/Pods-MonstersTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MonstersTests/Pods-MonstersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59D343B2B06BE66C0D581477 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67A35C4D1517EDA05EC5FC83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Monsters-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDD8E5E102D3FD2DC70E5F0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonstersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9956EB6A2354C18F00A48EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F13B632357181600883937 /* Monster+Type.swift in Sources */,
+				99F13B672357181600883937 /* MonsterJSON.swift in Sources */,
+				99F13B802357195D00883937 /* MonsterService.swift in Sources */,
+				99F13B612357181600883937 /* Monster.swift in Sources */,
+				99F13B882357355800883937 /* Exported.swift in Sources */,
+				99F13B6F2357181600883937 /* Hp.swift in Sources */,
+				99F13B78235718A400883937 /* NSRegularExpression+matches.swift in Sources */,
+				99F13B6B2357181600883937 /* Monster+Location.swift in Sources */,
+				99F13B6D2357181600883937 /* Alignment.swift in Sources */,
+				99F13B732357181600883937 /* Monster+Size.swift in Sources */,
+				9956EB762354C18F00A48EBD /* ViewController.swift in Sources */,
+				99F13B712357181600883937 /* Monster+Action.swift in Sources */,
+				9956EB722354C18F00A48EBD /* AppDelegate.swift in Sources */,
+				99F13B652357181600883937 /* Biom.swift in Sources */,
+				99F13B90235756E600883937 /* MonsterData.swift in Sources */,
+				99F13B832357196900883937 /* MonsterServiceImpl.swift in Sources */,
+				99F13B8A2357355800883937 /* Imported.swift in Sources */,
+				9956EB742354C18F00A48EBD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9956EB802354C19100A48EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F13B6C2357181600883937 /* Monster+Location.swift in Sources */,
+				99F13B6E2357181600883937 /* Alignment.swift in Sources */,
+				99F13B742357181600883937 /* Monster+Size.swift in Sources */,
+				99F13B812357195D00883937 /* MonsterService.swift in Sources */,
+				99F13B702357181600883937 /* Hp.swift in Sources */,
+				99F13B8B2357355800883937 /* Imported.swift in Sources */,
+				99F13B662357181600883937 /* Biom.swift in Sources */,
+				99F13B892357355800883937 /* Exported.swift in Sources */,
+				99F13B642357181600883937 /* Monster+Type.swift in Sources */,
+				99F13B682357181600883937 /* MonsterJSON.swift in Sources */,
+				99F13B622357181600883937 /* Monster.swift in Sources */,
+				9956EB892354C19100A48EBD /* MonstersTests.swift in Sources */,
+				99F13B79235718A400883937 /* NSRegularExpression+matches.swift in Sources */,
+				99F13B722357181600883937 /* Monster+Action.swift in Sources */,
+				99F13B9223575DA500883937 /* MonsterData.swift in Sources */,
+				99F13B842357196900883937 /* MonsterServiceImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9956EB862354C19100A48EBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9956EB6D2354C18F00A48EBD /* Monsters */;
+			targetProxy = 9956EB852354C19100A48EBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9956EB772354C18F00A48EBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9956EB782354C18F00A48EBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9956EB7C2354C19100A48EBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9956EB7D2354C19100A48EBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9956EB8B2354C19100A48EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9956EB8C2354C19100A48EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9956EB8E2354C19100A48EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEDCE5DF55105D2558CD7866 /* Pods-Monsters.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VABTQXHL78;
+				INFOPLIST_FILE = Monsters/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.s-emp.Monsters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9956EB8F2354C19100A48EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA82ABF19D23384F4DDAE3D0 /* Pods-Monsters.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VABTQXHL78;
+				INFOPLIST_FILE = Monsters/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.s-emp.Monsters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9956EB912354C19100A48EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47380D12DE9197583D99DD71 /* Pods-MonstersTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VABTQXHL78;
+				INFOPLIST_FILE = MonstersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.s-emp.MonstersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monsters.app/Monsters";
+			};
+			name = Debug;
+		};
+		9956EB922354C19100A48EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 045623EDB4F72A6A8F4C4667 /* Pods-MonstersTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VABTQXHL78;
+				INFOPLIST_FILE = MonstersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.s-emp.MonstersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monsters.app/Monsters";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9956EB692354C18F00A48EBD /* Build configuration list for PBXProject "Monsters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9956EB8B2354C19100A48EBD /* Debug */,
+				9956EB8C2354C19100A48EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9956EB8D2354C19100A48EBD /* Build configuration list for PBXNativeTarget "Monsters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9956EB8E2354C19100A48EBD /* Debug */,
+				9956EB8F2354C19100A48EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9956EB902354C19100A48EBD /* Build configuration list for PBXNativeTarget "MonstersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9956EB912354C19100A48EBD /* Debug */,
+				9956EB922354C19100A48EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9956EB662354C18F00A48EBD /* Project object */;
+}
