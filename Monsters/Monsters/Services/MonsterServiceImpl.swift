@@ -33,6 +33,12 @@ class MonsterServiceImpl: MonsterService {
         }
     }
     
+    func openJSON() -> [Monster] {
+        guard let url = Bundle.main.url(forResource: "Monsters", withExtension: "json") else { fatalError("Отсутствует файл Spell.json в Bundle") }
+        let monsterJSON: [MonsterJSON] = try! MonsterServiceImpl.import(url)
+        return monsterJSON.map { Monster($0) }
+    }
+    
     func resetDataBase() {
         guard let url = Bundle.main.url(forResource: "Monsters", withExtension: "json") else { fatalError("Отсутствует файл Spell.json в Bundle") }
         do {

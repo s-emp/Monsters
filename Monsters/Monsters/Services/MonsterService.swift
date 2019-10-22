@@ -17,6 +17,7 @@ protocol MonsterService {
     static func shared() -> MonsterService
     
     func resetDataBase()
+    func openJSON() -> [Monster]
     func save(_ monster: Monster)
     
 }

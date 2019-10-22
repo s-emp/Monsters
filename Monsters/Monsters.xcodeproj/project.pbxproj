@@ -14,6 +14,7 @@
 		9956EB7B2354C19100A48EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9956EB7A2354C19100A48EBD /* Assets.xcassets */; };
 		9956EB7E2354C19100A48EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9956EB7C2354C19100A48EBD /* LaunchScreen.storyboard */; };
 		9956EB892354C19100A48EBD /* MonstersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956EB882354C19100A48EBD /* MonstersTests.swift */; };
+		9978EF33235F37A7009F2170 /* MonsterRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978EF32235F37A7009F2170 /* MonsterRealm.swift */; };
 		99F13B612357181600883937 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B572357181500883937 /* Monster.swift */; };
 		99F13B632357181600883937 /* Monster+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B582357181500883937 /* Monster+Type.swift */; };
 		99F13B652357181600883937 /* Biom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B592357181500883937 /* Biom.swift */; };
@@ -59,6 +60,7 @@
 		9956EB842354C19100A48EBD /* MonstersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonstersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9956EB882354C19100A48EBD /* MonstersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstersTests.swift; sourceTree = "<group>"; };
 		9956EB8A2354C19100A48EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9978EF32235F37A7009F2170 /* MonsterRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterRealm.swift; sourceTree = "<group>"; };
 		99F13B572357181500883937 /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		99F13B582357181500883937 /* Monster+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Monster+Type.swift"; sourceTree = "<group>"; };
 		99F13B592357181500883937 /* Biom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biom.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				99F13B602357181600883937 /* Monster+Size.swift */,
 				99F13B582357181500883937 /* Monster+Type.swift */,
 				99F13B8F235756E600883937 /* MonsterData.swift */,
+				9978EF32235F37A7009F2170 /* MonsterRealm.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				9956EB722354C18F00A48EBD /* AppDelegate.swift in Sources */,
 				99F13B652357181600883937 /* Biom.swift in Sources */,
 				99F13B90235756E600883937 /* MonsterData.swift in Sources */,
+				9978EF33235F37A7009F2170 /* MonsterRealm.swift in Sources */,
 				99F13B832357196900883937 /* MonsterServiceImpl.swift in Sources */,
 				99F13B8A2357355800883937 /* Imported.swift in Sources */,
 				9956EB742354C18F00A48EBD /* SceneDelegate.swift in Sources */,

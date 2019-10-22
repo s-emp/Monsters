@@ -9,6 +9,7 @@
 import XCTest
 @testable import Monsters
 
+fileprivate let separator: Character = "❗️"
 class MonstersTests: XCTestCase {
 
     override func setUp() {
@@ -53,5 +54,119 @@ class MonstersTests: XCTestCase {
         let result = monsterService.monsters.first { $0.name == "TEST"}
         XCTAssert(result != nil)
     }
+    
+    func testOpenJSON() {
+        let monsterService = MonsterServiceImpl.shared()
+        let monster = monsterService.openJSON()
+        XCTAssert(monster.count > 0)
+    }
 
+    func testTransform() {
+        let monster = Monster(name: "Test", image: URL(string: "https://ya.ru")!, fiction: "Fiction", size: .G, type: .celestial, source: "MT", alignment: .chaoticEvil, ac: "500", hp: Hp(200, dices: Hp.Dice(dice: 20, count: 20), bonus: 100), speed: "speed", str: 333, dex: 333, con: 333, int: 333, wis: 333, cha: 333, save: "save", vulnerable: "vulnerable", skill: "skill", passive: 444, languages: "languages", cr: "cr", biom: [.arctic], subtype: ["subtype"], conditionImmune: "comditionImmune", senses: "senses", immune: "immune", resist: "resist", spells: "spells", trait: [Monster.Action(name: "Trait", text: "1", attack: ["1"])], action: [Monster.Action(name: "Action", text: "1", attack: ["1"])], reaction: [Monster.Action(name: "Reaction", text: "1", attack: ["1"])], legendary: [Monster.Action(name: "Legendary", text: "1", attack: ["1"])], legendaryInfo: "legInfo", lair: Monster.Location(text: "La❗️ir", list: ["1"]), local: Monster.Location(text: "Local", list: ["1"]))
+        let monsterRealm = MonsterRealm.transform(monster)
+        if monsterRealm.name != "Test" {
+            XCTAssert(false)
+        }
+        if monsterRealm.image != "https://ya.ru" {
+            XCTAssert(false)
+        }
+        if monsterRealm.fiction != "Fiction" {
+            XCTAssert(false)
+        }
+        if monsterRealm.size != "G" {
+            XCTAssert(false)
+        }
+        if monsterRealm.type != "celestial" {
+            XCTAssert(false)
+        }
+        if monsterRealm.source != "MT" {
+            XCTAssert(false)
+        }
+        if monsterRealm.alignment != "chaoticEvil" {
+            XCTAssert(false)
+        }
+        if monsterRealm.ac != "500" {
+            XCTAssert(false)
+        }
+        if monsterRealm.hp != "200 (20к20 + 100) " {
+            XCTAssert(false)
+        }
+        if monsterRealm.speed != "speed" {
+            XCTAssert(false)
+        }
+        if monsterRealm.str != 333 {
+            XCTAssert(false)
+        }
+        if monsterRealm.dex != 333 {
+            XCTAssert(false)
+        }
+        if monsterRealm.con != 333 {
+            XCTAssert(false)
+        }
+        if monsterRealm.int != 333 {
+            XCTAssert(false)
+        }
+        if monsterRealm.wis != 333 {
+            XCTAssert(false)
+        }
+        if monsterRealm.cha != 333 {
+            XCTAssert(false)
+        }
+        if monsterRealm.save != "save" {
+            XCTAssert(false)
+        }
+        if monsterRealm.vulnerable != "vulnerable" {
+            XCTAssert(false)
+        }
+        if monsterRealm.skill != "skill" {
+            XCTAssert(false)
+        }
+        if monsterRealm.passive != 444 {
+            XCTAssert(false)
+        }
+        if monsterRealm.languages != "languages" {
+            XCTAssert(false)
+        }
+        if monsterRealm.cr != "cr" {
+            XCTAssert(false)
+        }
+        if monsterRealm.biomRealm != "arctic" {
+            XCTAssert(false)
+        }
+        if monsterRealm.subtypeRealm != "subtype" {
+            XCTAssert(false)
+        }
+        if monsterRealm.conditionImmune != "conditionImmune" {
+            XCTAssert(false)
+        }
+        if monsterRealm.senses != "senses" {
+            XCTAssert(false)
+        }
+        if monsterRealm.immune != "immune" {
+            XCTAssert(false)
+        }
+        if monsterRealm.resist != "resist" {
+            XCTAssert(false)
+        }
+        if monsterRealm.spells != "spells" {
+            XCTAssert(false)
+        }
+        if monsterRealm.legendaryInfo != "legInfo" {
+            XCTAssert(false)
+        }
+        if monsterRealm.lair != "{\"text\":\"La❗️ir\",\"list\":[\"1\"]}" {
+            XCTAssert(false, monsterRealm.lair ?? "--")
+        }
+        if let lair = monsterRealm.lair {
+            if let data = lair.data(using: .utf8), let lairTmp = try? JSONDecoder().decode(Monster.Location.self, from: data) {
+                print(lairTmp)
+            } else {
+                XCTAssert(false)
+            }
+        } else {
+            XCTAssert(false, monsterRealm.lair ?? "--")
+        }
+        XCTAssert(true)
+        
+    }
 }

@@ -16,7 +16,4 @@ class ViewController: UIViewController {
         print(service.monsters.count)
         // Do any additional setup after loading the view.
     }
-
-
 }
-
