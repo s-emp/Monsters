@@ -10,6 +10,8 @@ import Foundation
 import RealmSwift
 
 fileprivate let separator: Character = "❗️"
+fileprivate let decoder = JSONDecoder()
+fileprivate let encoder = JSONEncoder()
 
 class MonsterRealm: Object, Codable {
     @objc dynamic var name: String = ""
@@ -36,10 +38,16 @@ class MonsterRealm: Object, Codable {
     @objc dynamic var cr: String = ""
     
     @objc dynamic var biomRealm: String = ""
-    var biom: [String] = []
+    var biom: [String] {
+        get { return biomRealm.split(separator: separator).map { String($0) }}
+        set { biomRealm = newValue.joined(separator: String(separator)) }
+    }
     
     @objc dynamic var subtypeRealm: String = ""
-    var subtype: [String] = []
+    var subtype: [String] {
+        get { return subtypeRealm.split(separator: separator).map { String($0) }}
+        set { subtypeRealm = newValue.joined(separator: String(separator)) }
+    }
     
     @objc dynamic var conditionImmune: String?
     @objc dynamic var senses: String?
@@ -48,13 +56,22 @@ class MonsterRealm: Object, Codable {
     @objc dynamic var spells: String?
     
     @objc dynamic var traitRealm: String = ""
-    var trait: [String] = []
+    var trait: [String] {
+        get { return traitRealm.split(separator: separator).map { String($0) }}
+        set { traitRealm = newValue.joined(separator: String(separator)) }
+    }
     
     @objc dynamic var actionRealm: String = ""
-    var action: [String] = []
+    var action: [String] {
+        get { return actionRealm.split(separator: separator).map { String($0) }}
+        set { actionRealm = newValue.joined(separator: String(separator)) }
+    }
     
     @objc dynamic var reactionRealm: String = ""
-    var reaction: [String] = []
+    var reaction: [String] {
+        get { return reactionRealm.split(separator: separator).map { String($0) }}
+        set { reactionRealm = newValue.joined(separator: String(separator)) }
+    }
     
     @objc dynamic var legendaryRealm: String = ""
     var legendary: [String] {
@@ -70,7 +87,6 @@ class MonsterRealm: Object, Codable {
 extension MonsterRealm {
     static func transform(_ monster: Monster) -> MonsterRealm {
         let result = MonsterRealm()
-        let enc = JSONEncoder()
         result.name = monster.name
         result.image = monster.image.absoluteString
         result.fiction = monster.fiction
@@ -101,12 +117,26 @@ extension MonsterRealm {
         result.resist = monster.resist
         result.spells = monster.spells
         
-        
+        result.trait = monster.trait.map {
+            String(data: (try! encoder.encode($0)), encoding: .utf8)!
+        }
+        result.action = monster.action.map {
+            String(data: (try! encoder.encode($0)), encoding: .utf8)!
+        }
+        result.reaction = monster.reaction.map {
+            String(data: (try! encoder.encode($0)), encoding: .utf8)!
+        }
+        result.legendary = monster.legendary.map {
+            String(data: (try! encoder.encode($0)), encoding: .utf8)!
+        }
         
         result.legendaryInfo = monster.legendaryInfo
+        
         if let lair = monster.lair {
-            let data = try! enc.encode(lair)
-            result.lair = String(data: data, encoding: String.Encoding.utf8)
+            result.lair = String(data: try! encoder.encode(lair), encoding: .utf8)
+        }
+        if let local = monster.local {
+            result.local = String(data: try! encoder.encode(local), encoding: .utf8)
         }
         
         return result

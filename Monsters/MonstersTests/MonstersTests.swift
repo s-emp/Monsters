@@ -62,7 +62,7 @@ class MonstersTests: XCTestCase {
     }
 
     func testTransform() {
-        let monster = Monster(name: "Test", image: URL(string: "https://ya.ru")!, fiction: "Fiction", size: .G, type: .celestial, source: "MT", alignment: .chaoticEvil, ac: "500", hp: Hp(200, dices: Hp.Dice(dice: 20, count: 20), bonus: 100), speed: "speed", str: 333, dex: 333, con: 333, int: 333, wis: 333, cha: 333, save: "save", vulnerable: "vulnerable", skill: "skill", passive: 444, languages: "languages", cr: "cr", biom: [.arctic], subtype: ["subtype"], conditionImmune: "comditionImmune", senses: "senses", immune: "immune", resist: "resist", spells: "spells", trait: [Monster.Action(name: "Trait", text: "1", attack: ["1"])], action: [Monster.Action(name: "Action", text: "1", attack: ["1"])], reaction: [Monster.Action(name: "Reaction", text: "1", attack: ["1"])], legendary: [Monster.Action(name: "Legendary", text: "1", attack: ["1"])], legendaryInfo: "legInfo", lair: Monster.Location(text: "La❗️ir", list: ["1"]), local: Monster.Location(text: "Local", list: ["1"]))
+        let monster = Monster(name: "Test", image: URL(string: "https://ya.ru")!, fiction: "Fiction", size: .G, type: .celestial, source: "MT", alignment: .chaoticEvil, ac: "500", hp: Hp(200, dices: Hp.Dice(dice: 20, count: 20), bonus: 100), speed: "speed", str: 333, dex: 333, con: 333, int: 333, wis: 333, cha: 333, save: "save", vulnerable: "vulnerable", skill: "skill", passive: 444, languages: "languages", cr: "cr", biom: [.arctic], subtype: ["subtype"], conditionImmune: "conditionImmune", senses: "senses", immune: "immune", resist: "resist", spells: "spells", trait: [Monster.Action(name: "Trait", text: "1", attack: ["1"]), Monster.Action(name: "Trait2", text: "1", attack: ["1"])], action: [Monster.Action(name: "Action", text: "1", attack: ["1"])], reaction: [Monster.Action(name: "Reaction", text: "1", attack: ["1"])], legendary: [Monster.Action(name: "Legendary", text: "1", attack: ["1"])], legendaryInfo: "legInfo", lair: Monster.Location(text: "La❗️ir", list: ["1"]), local: Monster.Location(text: "Local", list: ["1"]))
         let monsterRealm = MonsterRealm.transform(monster)
         if monsterRealm.name != "Test" {
             XCTAssert(false)
@@ -76,19 +76,19 @@ class MonstersTests: XCTestCase {
         if monsterRealm.size != "G" {
             XCTAssert(false)
         }
-        if monsterRealm.type != "celestial" {
+        if monsterRealm.type != "небожитель" {
             XCTAssert(false)
         }
         if monsterRealm.source != "MT" {
             XCTAssert(false)
         }
-        if monsterRealm.alignment != "chaoticEvil" {
+        if monsterRealm.alignment != "хаотично-злое" {
             XCTAssert(false)
         }
         if monsterRealm.ac != "500" {
             XCTAssert(false)
         }
-        if monsterRealm.hp != "200 (20к20 + 100) " {
+        if monsterRealm.hp != "200 (20к20 + 100)" {
             XCTAssert(false)
         }
         if monsterRealm.speed != "speed" {
@@ -130,7 +130,7 @@ class MonstersTests: XCTestCase {
         if monsterRealm.cr != "cr" {
             XCTAssert(false)
         }
-        if monsterRealm.biomRealm != "arctic" {
+        if monsterRealm.biomRealm != "ARCTIC" {
             XCTAssert(false)
         }
         if monsterRealm.subtypeRealm != "subtype" {

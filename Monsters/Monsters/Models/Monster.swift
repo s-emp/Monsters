@@ -8,6 +8,9 @@
 
 import Foundation
 
+fileprivate let decoder = JSONDecoder()
+fileprivate let encoder = JSONEncoder()
+
 struct Monster {
     var name: String
     var image: URL
@@ -87,6 +90,51 @@ struct Monster {
         
         lair = monster.lair
         local = monster.local
+    }
+    
+    init(_ monster: MonsterRealm) {
+        name = monster.name
+        image = URL(string: monster.image)!
+        fiction = monster.fiction
+        size = Size(rawValue: monster.size)!
+        type = TypeMonster(rawValue: monster.type)!
+        source = monster.source
+        alignment = Alignment.getAlignment(for: monster.alignment)
+        ac = monster.ac
+        hp = Hp(monster.hp)!
+        speed = monster.speed
+        str = monster.str
+        dex = monster.dex
+        con = monster.con
+        int = monster.int
+        wis = monster.wis
+        cha = monster.cha
+        save = monster.save
+        vulnerable = monster.vulnerable
+        skill = monster.skill
+        passive = monster.passive
+        languages = monster.languages
+        cr = monster.cr
+        biom = monster.biom.map({ Biom(rawValue: $0)! })
+        subtype = monster.subtype
+        conditionImmune = monster.conditionImmune
+        senses = monster.senses
+        immune = monster.immune
+        resist = monster.resist
+        spells = monster.spells
+        
+        trait = monster.trait.map { try! decoder.decode(Action.self, from: $0.data(using: .utf8)!) }
+        action = monster.action.map { try! decoder.decode(Action.self, from: $0.data(using: .utf8)!) }
+        reaction = monster.reaction.map { try! decoder.decode(Action.self, from: $0.data(using: .utf8)!) }
+        legendary = monster.legendary.map { try! decoder.decode(Action.self, from: $0.data(using: .utf8)!) }
+        legendaryInfo = monster.legendaryInfo
+        
+        if let lair = monster.lair {
+            self.lair = try! decoder.decode(Location.self, from: lair.data(using: .utf8)! )
+        }
+        if let local = monster.local {
+            self.local = try! decoder.decode(Location.self, from: local.data(using: .utf8)! )
+        }
     }
     
     init(name: String, image: URL, fiction: String?, size: Size, type: TypeMonster!, source: String, alignment: Alignment, ac: String, hp: Hp, speed: String, str: Int, dex: Int, con: Int, int: Int, wis: Int, cha: Int, save: String?, vulnerable: String?, skill: String?, passive: Int, languages: String?, cr: String, biom: [Biom], subtype: [String], conditionImmune: String?, senses: String?, immune: String?, resist: String?, spells: String?, trait: [Action], action: [Action], reaction: [Action], legendary: [Action], legendaryInfo: String?, lair: Location?, local: Location?) {
