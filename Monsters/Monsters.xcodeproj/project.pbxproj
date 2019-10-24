@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		995198962361C70A0044778F /* Monsters.json in Resources */ = {isa = PBXBuildFile; fileRef = 995198952361C70A0044778F /* Monsters.json */; };
+		995198982361C7FE0044778F /* Monsters.txt in Resources */ = {isa = PBXBuildFile; fileRef = 995198972361C7FE0044778F /* Monsters.txt */; };
 		9956EB722354C18F00A48EBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956EB712354C18F00A48EBD /* AppDelegate.swift */; };
 		9956EB742354C18F00A48EBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956EB732354C18F00A48EBD /* SceneDelegate.swift */; };
 		9956EB762354C18F00A48EBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956EB752354C18F00A48EBD /* ViewController.swift */; };
@@ -46,7 +46,7 @@
 /* Begin PBXFileReference section */
 		045623EDB4F72A6A8F4C4667 /* Pods-MonstersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.release.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.release.xcconfig"; sourceTree = "<group>"; };
 		47380D12DE9197583D99DD71 /* Pods-MonstersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.debug.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.debug.xcconfig"; sourceTree = "<group>"; };
-		995198952361C70A0044778F /* Monsters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Monsters.json; sourceTree = "<group>"; };
+		995198972361C7FE0044778F /* Monsters.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Monsters.txt; sourceTree = "<group>"; };
 		9956EB6E2354C18F00A48EBD /* Monsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9956EB712354C18F00A48EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9956EB732354C18F00A48EBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 		99F13B7A2357191B00883937 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				995198952361C70A0044778F /* Monsters.json */,
+				995198972361C7FE0044778F /* Monsters.txt */,
 				9956EB7A2354C19100A48EBD /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -309,8 +309,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				995198962361C70A0044778F /* Monsters.json in Resources */,
 				9956EB7E2354C19100A48EBD /* LaunchScreen.storyboard in Resources */,
+				995198982361C7FE0044778F /* Monsters.txt in Resources */,
 				9956EB7B2354C19100A48EBD /* Assets.xcassets in Resources */,
 				9956EB792354C18F00A48EBD /* Main.storyboard in Resources */,
 			);
