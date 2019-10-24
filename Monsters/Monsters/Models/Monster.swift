@@ -51,47 +51,6 @@ struct Monster {
     var lair: Location?
     var local: Location?
     
-    init(_ monster: MonsterJSON) {
-        name = monster.name
-        image = monster.image
-        fiction = monster.fiction
-        size = Size(rawValue: monster.size)!
-        type = TypeMonster(rawValue: monster.type)!
-        source = monster.source
-        alignment = Alignment.getAlignment(for: monster.alignment)
-        ac = monster.ac
-        hp = Hp(monster.hp)!
-        speed = monster.speed
-        str = monster.str
-        dex = monster.dex
-        con = monster.con
-        int = monster.int
-        wis = monster.wis
-        cha = monster.cha
-        save = monster.save
-        vulnerable = monster.vulnerable
-        skill = monster.skill
-        passive = monster.passive
-        languages = monster.languages
-        cr = monster.cr
-        biom = monster.biom.map({ Biom(rawValue: $0)! })
-        subtype = monster.subtype
-        conditionImmune = monster.conditionImmune
-        senses = monster.senses
-        immune = monster.immune
-        resist = monster.resist
-        spells = monster.spells
-        
-        trait = monster.trait
-        action = monster.action
-        reaction = monster.reaction
-        legendary = monster.legendary
-        legendaryInfo = monster.legendaryInfo
-        
-        lair = monster.lair
-        local = monster.local
-    }
-    
     init(_ monster: MonsterRealm) {
         name = monster.name
         image = URL(string: monster.image)!

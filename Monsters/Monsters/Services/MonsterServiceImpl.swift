@@ -14,7 +14,7 @@ class MonsterServiceImpl: MonsterService {
     // MARK: - Properties
     var dataBase: Realm
     var monsters: [Monster] {
-        get { dataBase.objects(MonsterData.self).map { Monster($0.transform()) } }
+        get { dataBase.objects(MonsterRealm.self).map { Monster($0) } }
     }
     
     private static var service: MonsterService?
@@ -27,26 +27,25 @@ class MonsterServiceImpl: MonsterService {
     
     // MARK: - Methods
     func save(_ monster: Monster) {
-        let monsterData = MonsterData.transform(MonsterJSON(monster))
+        let monsterRealm = MonsterRealm.transform(monster)
         try! dataBase.write {
-            dataBase.add(monsterData)
+            dataBase.add(monsterRealm)
         }
     }
     
     func openJSON() -> [Monster] {
         guard let url = Bundle.main.url(forResource: "Monsters", withExtension: "json") else { fatalError("Отсутствует файл Spell.json в Bundle") }
-        let monsterJSON: [MonsterJSON] = try! MonsterServiceImpl.import(url)
+        let monsterJSON: [MonsterRealm] = try! MonsterServiceImpl.import(url)
         return monsterJSON.map { Monster($0) }
     }
     
     func resetDataBase() {
         guard let url = Bundle.main.url(forResource: "Monsters", withExtension: "json") else { fatalError("Отсутствует файл Spell.json в Bundle") }
         do {
-            let monstersJSON: [MonsterJSON] = try MonsterServiceImpl.import(url)
-            let monstersData = monstersJSON.map { MonsterData.transform($0) }
+            let monstersRealm: [MonsterRealm] = try MonsterServiceImpl.import(url)
             try dataBase.write {
-                dataBase.delete(dataBase.objects(MonsterData.self))
-                dataBase.add(monstersData)
+                dataBase.deleteAll()
+                dataBase.add(monstersRealm)
             }
         } catch {
             fatalError(error.localizedDescription)
@@ -56,7 +55,7 @@ class MonsterServiceImpl: MonsterService {
     // MARK: - Init
     private init() {
         dataBase = try! Realm(configuration: Realm.Configuration.defaultConfiguration)
-        if dataBase.objects(MonsterData.self).count == 0 {
+        if dataBase.objects(MonsterRealm.self).count == 0 {
             resetDataBase()
         }
     }

@@ -29,7 +29,7 @@ class MonstersTests: XCTestCase {
         let monsterService = MonsterServiceImpl.shared()
         let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("TestExport")
         do {
-            try MonsterServiceImpl.export(url, objects: monsterService.monsters.map{ MonsterJSON($0) })
+            try MonsterServiceImpl.export(url, objects: monsterService.monsters.map{ MonsterRealm.transform($0) })
             XCTAssert(true)
         } catch {
             XCTAssert(false, error.localizedDescription)
@@ -40,7 +40,7 @@ class MonstersTests: XCTestCase {
         testExport()
         let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("TestExport")
         do {
-            let monsters: [MonsterJSON] = try MonsterServiceImpl.import(url)
+            let monsters: [MonsterRealm] = try MonsterServiceImpl.import(url)
             XCTAssert(monsters.count > 100)
         } catch {
             XCTAssert(false, error.localizedDescription)
@@ -167,6 +167,5 @@ class MonstersTests: XCTestCase {
             XCTAssert(false, monsterRealm.lair ?? "--")
         }
         XCTAssert(true)
-        
     }
 }

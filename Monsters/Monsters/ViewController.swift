@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let service = MonsterServiceImpl.shared()
         print(service.monsters.count)
-        // Do any additional setup after loading the view.
+        let monster = service.openJSON()
+        let monsterRealm = monster.map { MonsterRealm.transform($0) }
+        let fileManager = FileManager.default
+        var url = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+        url.appendPathComponent("Monster.json")
+        print(url.absoluteString)
+        try! MonsterServiceImpl.export(url, objects: monsterRealm)
     }
 }
