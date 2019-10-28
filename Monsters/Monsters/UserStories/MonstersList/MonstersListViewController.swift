@@ -5,7 +5,7 @@
 
 import UIKit
 
-protocol MonstersListDisplayLogic: class {
+protocol MonstersListDisplayLogic: AnyObject {
     func displaySomething(viewModel: MonstersList.Something.ViewModel)
 }
 
