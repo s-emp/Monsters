@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05DB52D6371FDE96A00E59B1 /* MonstersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE15B25CD78EA7B866FD8459 /* MonstersListViewController.swift */; };
+		0F8EE04B752524D69F00380D /* MonstersListModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1081D4F24B8486BE4E2BF6 /* MonstersListModelTests.swift */; };
+		148B2A7B57FB7A119B73A4BA /* MonstersListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEDD26D8A14766A5FD19A5C /* MonstersListModel.swift */; };
+		1E65127D680D933943EBCEA8 /* MonstersListBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFE0535D637C8DC6180F686 /* MonstersListBuilderTests.swift */; };
+		1E87DD5A30B47140A12725CD /* MonstersListDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8B490FB4E9F83F592FE9B /* MonstersListDataStore.swift */; };
+		226B40F8599D33402F30E9E9 /* MonstersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E511A9B4D1EB573A01640 /* MonstersListInteractor.swift */; };
+		33D5DC15C0876081B26C4708 /* MonstersListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D889F64FBCFC9F663F9D55A7 /* MonstersListService.swift */; };
+		3DE3E46E4935DF7C6510D560 /* MonstersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194171B5D90CAB0ACAE0509D /* MonstersListPresenter.swift */; };
+		48F147D0062C400DB93E6861 /* MonstersListDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B528961474C96F43935606 /* MonstersListDataFlow.swift */; };
+		72C3D4B9878ACEA2D5337648 /* MonstersListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30954DA09128518126E4FFA6 /* MonstersListProvider.swift */; };
+		7E30A78E65F7ED02D8B3ED88 /* MonstersListProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAFDA9424AC424E86DED0E /* MonstersListProviderTests.swift */; };
+		8B8C61799ABAD9E965466FFE /* MonstersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9312B1069CFC2B7FC84BD70 /* MonstersListView.swift */; };
+		992902AB23672753009DB2C7 /* UniqueIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992902A923672753009DB2C7 /* UniqueIdentifiable.swift */; };
+		992902AC23672753009DB2C7 /* ModuleBuider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992902AA23672753009DB2C7 /* ModuleBuider.swift */; };
 		995198982361C7FE0044778F /* Monsters.txt in Resources */ = {isa = PBXBuildFile; fileRef = 995198972361C7FE0044778F /* Monsters.txt */; };
 		9956EB722354C18F00A48EBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956EB712354C18F00A48EBD /* AppDelegate.swift */; };
 		9956EB742354C18F00A48EBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956EB732354C18F00A48EBD /* SceneDelegate.swift */; };
@@ -29,8 +43,13 @@
 		99F13B832357196900883937 /* MonsterServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B822357196900883937 /* MonsterServiceImpl.swift */; };
 		99F13B882357355800883937 /* Exported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B862357355800883937 /* Exported.swift */; };
 		99F13B8A2357355800883937 /* Imported.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F13B872357355800883937 /* Imported.swift */; };
+		9CC3397C49BBFDC94FC142E9 /* MonstersListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D12EFDD101491225F30CBE /* MonstersListServiceTests.swift */; };
+		B6324545F7F4526E964C9481 /* MonstersListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90AB8EBBFA334B2F19BF07 /* MonstersListBuilder.swift */; };
 		C267AA72C4164DE63124C0E3 /* Pods_MonstersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A63600F11B42EBD28118B866 /* Pods_MonstersTests.framework */; };
+		C3FED926CAC287CB4E59D9E1 /* MonstersListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6F1DF8CB496F118E811944 /* MonstersListInteractorTests.swift */; };
+		D55DBEDA855C50C4E1D2A148 /* MonstersListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0812D15CFA4DC35CEF36F88 /* MonstersListViewControllerTests.swift */; };
 		D7B4463D7CF97A984FD95863 /* Pods_Monsters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DF4C30F83B37946A9E7D1D /* Pods_Monsters.framework */; };
+		D891BD222C44E9B92469961D /* MonstersListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A1731F554C9C0793F0D90C /* MonstersListPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +64,16 @@
 
 /* Begin PBXFileReference section */
 		045623EDB4F72A6A8F4C4667 /* Pods-MonstersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.release.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.release.xcconfig"; sourceTree = "<group>"; };
+		194171B5D90CAB0ACAE0509D /* MonstersListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListPresenter.swift; sourceTree = "<group>"; };
+		1AEDD26D8A14766A5FD19A5C /* MonstersListModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListModel.swift; sourceTree = "<group>"; };
+		30954DA09128518126E4FFA6 /* MonstersListProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListProvider.swift; sourceTree = "<group>"; };
+		3CF8B490FB4E9F83F592FE9B /* MonstersListDataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListDataStore.swift; sourceTree = "<group>"; };
 		47380D12DE9197583D99DD71 /* Pods-MonstersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.debug.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		78B528961474C96F43935606 /* MonstersListDataFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListDataFlow.swift; sourceTree = "<group>"; };
+		8FEAFDA9424AC424E86DED0E /* MonstersListProviderTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListProviderTests.swift; sourceTree = "<group>"; };
+		90A1731F554C9C0793F0D90C /* MonstersListPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListPresenterTests.swift; sourceTree = "<group>"; };
+		992902A923672753009DB2C7 /* UniqueIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniqueIdentifiable.swift; sourceTree = "<group>"; };
+		992902AA23672753009DB2C7 /* ModuleBuider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuider.swift; sourceTree = "<group>"; };
 		995198972361C7FE0044778F /* Monsters.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Monsters.txt; sourceTree = "<group>"; };
 		9956EB6E2354C18F00A48EBD /* Monsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9956EB712354C18F00A48EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,9 +101,19 @@
 		99F13B862357355800883937 /* Exported.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exported.swift; sourceTree = "<group>"; };
 		99F13B872357355800883937 /* Imported.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Imported.swift; sourceTree = "<group>"; };
 		A63600F11B42EBD28118B866 /* Pods_MonstersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonstersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE15B25CD78EA7B866FD8459 /* MonstersListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListViewController.swift; sourceTree = "<group>"; };
+		AE9E511A9B4D1EB573A01640 /* MonstersListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListInteractor.swift; sourceTree = "<group>"; };
+		B0812D15CFA4DC35CEF36F88 /* MonstersListViewControllerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListViewControllerTests.swift; sourceTree = "<group>"; };
 		C2DF4C30F83B37946A9E7D1D /* Pods_Monsters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monsters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D889F64FBCFC9F663F9D55A7 /* MonstersListService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListService.swift; sourceTree = "<group>"; };
+		DF1081D4F24B8486BE4E2BF6 /* MonstersListModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListModelTests.swift; sourceTree = "<group>"; };
+		E9312B1069CFC2B7FC84BD70 /* MonstersListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListView.swift; sourceTree = "<group>"; };
 		EA82ABF19D23384F4DDAE3D0 /* Pods-Monsters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters.release.xcconfig"; path = "Target Support Files/Pods-Monsters/Pods-Monsters.release.xcconfig"; sourceTree = "<group>"; };
 		EEDCE5DF55105D2558CD7866 /* Pods-Monsters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters.debug.xcconfig"; path = "Target Support Files/Pods-Monsters/Pods-Monsters.debug.xcconfig"; sourceTree = "<group>"; };
+		EF6F1DF8CB496F118E811944 /* MonstersListInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListInteractorTests.swift; sourceTree = "<group>"; };
+		F6D12EFDD101491225F30CBE /* MonstersListServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListServiceTests.swift; sourceTree = "<group>"; };
+		FB90AB8EBBFA334B2F19BF07 /* MonstersListBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListBuilder.swift; sourceTree = "<group>"; };
+		FDFE0535D637C8DC6180F686 /* MonstersListBuilderTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MonstersListBuilderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +136,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AD716BBA068F52A346FA36F /* MonstersList */ = {
+			isa = PBXGroup;
+			children = (
+				FB90AB8EBBFA334B2F19BF07 /* MonstersListBuilder.swift */,
+				AE15B25CD78EA7B866FD8459 /* MonstersListViewController.swift */,
+				AE9E511A9B4D1EB573A01640 /* MonstersListInteractor.swift */,
+				194171B5D90CAB0ACAE0509D /* MonstersListPresenter.swift */,
+				78B528961474C96F43935606 /* MonstersListDataFlow.swift */,
+				489E20F99CFE4207CBE7CD62 /* Model */,
+				91D208EEE6B61A333D52E42A /* Provider */,
+				46DCD06B4B9FB14F67514448 /* View */,
+			);
+			path = MonstersList;
+			sourceTree = "<group>";
+		};
+		46DCD06B4B9FB14F67514448 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9312B1069CFC2B7FC84BD70 /* MonstersListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		489E20F99CFE4207CBE7CD62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1AEDD26D8A14766A5FD19A5C /* MonstersListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		682E523D61B8FA03541EE593 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +176,32 @@
 				045623EDB4F72A6A8F4C4667 /* Pods-MonstersTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7FDE6DC0AAD1FE937D42856A /* MonstersList */ = {
+			isa = PBXGroup;
+			children = (
+				B9250FF8935E015B16DDDC61 /* Tests */,
+			);
+			path = MonstersList;
+			sourceTree = "<group>";
+		};
+		91D208EEE6B61A333D52E42A /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				30954DA09128518126E4FFA6 /* MonstersListProvider.swift */,
+				3CF8B490FB4E9F83F592FE9B /* MonstersListDataStore.swift */,
+				D889F64FBCFC9F663F9D55A7 /* MonstersListService.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		992902A823672724009DB2C7 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				2AD716BBA068F52A346FA36F /* MonstersList */,
+			);
+			path = UserStories;
 			sourceTree = "<group>";
 		};
 		9956EB652354C18F00A48EBD = {
@@ -136,6 +231,7 @@
 				99F13B752357189600883937 /* Core */,
 				99F13B7E2357194400883937 /* Services */,
 				99F13B562357180200883937 /* Models */,
+				992902A823672724009DB2C7 /* UserStories */,
 				9956EB712354C18F00A48EBD /* AppDelegate.swift */,
 				9956EB732354C18F00A48EBD /* SceneDelegate.swift */,
 				9956EB752354C18F00A48EBD /* ViewController.swift */,
@@ -151,6 +247,7 @@
 			children = (
 				9956EB882354C19100A48EBD /* MonstersTests.swift */,
 				9956EB8A2354C19100A48EBD /* Info.plist */,
+				7FDE6DC0AAD1FE937D42856A /* MonstersList */,
 			);
 			path = MonstersTests;
 			sourceTree = "<group>";
@@ -174,6 +271,8 @@
 		99F13B752357189600883937 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				992902AA23672753009DB2C7 /* ModuleBuider.swift */,
+				992902A923672753009DB2C7 /* UniqueIdentifiable.swift */,
 				99F13B852357354700883937 /* FileSystem */,
 				99F13B762357189A00883937 /* Extensions */,
 			);
@@ -213,6 +312,20 @@
 				99F13B872357355800883937 /* Imported.swift */,
 			);
 			path = FileSystem;
+			sourceTree = "<group>";
+		};
+		B9250FF8935E015B16DDDC61 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FDFE0535D637C8DC6180F686 /* MonstersListBuilderTests.swift */,
+				B0812D15CFA4DC35CEF36F88 /* MonstersListViewControllerTests.swift */,
+				EF6F1DF8CB496F118E811944 /* MonstersListInteractorTests.swift */,
+				90A1731F554C9C0793F0D90C /* MonstersListPresenterTests.swift */,
+				8FEAFDA9424AC424E86DED0E /* MonstersListProviderTests.swift */,
+				F6D12EFDD101491225F30CBE /* MonstersListServiceTests.swift */,
+				DF1081D4F24B8486BE4E2BF6 /* MonstersListModelTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		BF11EE90F6CF49AD0816035F /* Frameworks */ = {
@@ -414,6 +527,7 @@
 				99F13B632357181600883937 /* Monster+Type.swift in Sources */,
 				99F13B802357195D00883937 /* MonsterService.swift in Sources */,
 				99F13B612357181600883937 /* Monster.swift in Sources */,
+				992902AC23672753009DB2C7 /* ModuleBuider.swift in Sources */,
 				99F13B882357355800883937 /* Exported.swift in Sources */,
 				99F13B6F2357181600883937 /* Hp.swift in Sources */,
 				99F13B78235718A400883937 /* NSRegularExpression+matches.swift in Sources */,
@@ -428,6 +542,17 @@
 				99F13B832357196900883937 /* MonsterServiceImpl.swift in Sources */,
 				99F13B8A2357355800883937 /* Imported.swift in Sources */,
 				9956EB742354C18F00A48EBD /* SceneDelegate.swift in Sources */,
+				B6324545F7F4526E964C9481 /* MonstersListBuilder.swift in Sources */,
+				05DB52D6371FDE96A00E59B1 /* MonstersListViewController.swift in Sources */,
+				226B40F8599D33402F30E9E9 /* MonstersListInteractor.swift in Sources */,
+				3DE3E46E4935DF7C6510D560 /* MonstersListPresenter.swift in Sources */,
+				48F147D0062C400DB93E6861 /* MonstersListDataFlow.swift in Sources */,
+				148B2A7B57FB7A119B73A4BA /* MonstersListModel.swift in Sources */,
+				72C3D4B9878ACEA2D5337648 /* MonstersListProvider.swift in Sources */,
+				1E87DD5A30B47140A12725CD /* MonstersListDataStore.swift in Sources */,
+				33D5DC15C0876081B26C4708 /* MonstersListService.swift in Sources */,
+				992902AB23672753009DB2C7 /* UniqueIdentifiable.swift in Sources */,
+				8B8C61799ABAD9E965466FFE /* MonstersListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +561,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9956EB892354C19100A48EBD /* MonstersTests.swift in Sources */,
+				1E65127D680D933943EBCEA8 /* MonstersListBuilderTests.swift in Sources */,
+				D55DBEDA855C50C4E1D2A148 /* MonstersListViewControllerTests.swift in Sources */,
+				C3FED926CAC287CB4E59D9E1 /* MonstersListInteractorTests.swift in Sources */,
+				D891BD222C44E9B92469961D /* MonstersListPresenterTests.swift in Sources */,
+				7E30A78E65F7ED02D8B3ED88 /* MonstersListProviderTests.swift in Sources */,
+				9CC3397C49BBFDC94FC142E9 /* MonstersListServiceTests.swift in Sources */,
+				0F8EE04B752524D69F00380D /* MonstersListModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

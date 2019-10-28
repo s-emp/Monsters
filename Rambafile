@@ -1,0 +1,38 @@
+### Headers settings
+company: emp
+
+### Xcode project settings
+project_name: Monsters
+xcodeproj_path: Monsters.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: Monsters
+
+# The file path for new modules
+project_file_path: /Monsters/UserStories/
+
+# The Xcode group path to new modules
+project_group_path: /Monsters/UserStories/
+
+### Tests generation settings section
+# The tests target name
+test_target: MonstersTests
+
+# The file path for new tests
+test_file_path: /MonstersTests/
+
+# The Xcode group path to new tests
+test_group_path: /MonstersTests/
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+catalogs:
+- 'https://github.com/alfa-laboratory/YARCH-Template'
+
+templates:
+#- {name: local_template_name, local: 'absolute/file/path'}
+- {name: yarch}
+#- {name: catalog_template_name}
